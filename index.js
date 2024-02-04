@@ -25,7 +25,9 @@ const port = process.env.PORT || 3030;
 connectDB();
 
 // Enable CORS
-app.use(cors());
+app.use(cors({
+  origin: 'http://localhost:3000'
+}));
 
 app.use('/api/users', userRoutes);
 app.use('/api/artwork', artworkRoutes);
