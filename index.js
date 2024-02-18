@@ -25,10 +25,11 @@ const port = process.env.PORT || 3030;
 connectDB();
 
 // Enable CORS
-app.use(cors({
-  origin: ['https://sphericlient.vercel.app', 'http://localhost:3000'],
-  credentials: true
-}));
+ app.use(cors({
+    origin: ['https://sphericlient.vercel.app', 'http://localhost:3000'],
+    credentials: true
+  }));
+
 app.use('/api/users', userRoutes);
 app.use('/api/artwork', artworkRoutes);
 
