@@ -11,11 +11,11 @@ const artworkSchema = mongoose.Schema(
         required: true,
       },
       thumbnailImage: {
-        type: Buffer,
+        type: String,
         required: false,
       },
       artworkImages: {
-        type: [Buffer], // An array of paths to the artwork images
+        type: [String], // An array of paths to the artwork images
         required: false,
       },
       typeOfArtwork: {
