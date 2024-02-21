@@ -26,7 +26,7 @@ connectDB();
 
 // Enable CORS
   app.use(cors({
-    origin: ['https://spheriart.vercel.app', 'http://localhost:3000'],
+    origin: ['https://spheriart.vercel.app', 'https://sphericlient.vercel.app', 'http://localhost:3000'],
     credentials: true
   }));
 
